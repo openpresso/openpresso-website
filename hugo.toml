@@ -1,0 +1,24 @@
+baseURL = 'https://openpresso.org/'
+locale = 'en-us'
+title = 'Openpresso'
+theme = ['hugo-admonitions', 'PaperMod']
+
+[params]
+    disableThemeToggle = false
+    ShowShareButtons = false
+    ShowReadingTime = false
+
+[menu]
+    [[menu.main]]
+        identifier = "subprojects"
+        name = "Subprojects"
+        url = "/subprojects/"
+        weight = 10
+    [[menu.main]]
+        identifier = "roadmap"
+        name = "Roadmap"
+        url = "/roadmap/"
+        weight = 20
+
+[markup.goldmark.renderer]
+    unsafe = true

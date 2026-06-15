@@ -1,0 +1,19 @@
+items:
+  - phase: "Phase 1: Libopenpresso"
+    description: "Core hardware abstraction library"
+    completed: true
+  - phase: "Phase 2: Openpressod"
+    description: "Machine control daemon"
+    completed: true
+  - phase: "Phase 3: Openpresso-ctl"
+    description: "Daemon control CLI tool"
+    completed: true
+  - phase: "Phase 4: Bakckend"
+    description: "Database and web backend services"
+    completed: false
+  - phase: "Phase 5: User Interface"
+    description: "Web UI frontend with profile editor and live charts."
+    completed: false
+  - phase: "Phase 6: Hardware Kit"
+    description: "Production ready AIO PCB design and enclosure files."
+    completed: false
