@@ -8,7 +8,7 @@ items:
   - phase: "Phase 3: Openpresso-ctl"
     description: "Daemon control CLI tool"
     completed: true
-  - phase: "Phase 4: Bakckend"
+  - phase: "Phase 4: Backend"
     description: "Database and web backend services"
     completed: false
   - phase: "Phase 5: User Interface"
