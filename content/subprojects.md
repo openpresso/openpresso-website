@@ -39,8 +39,8 @@ Libopenpresso provides high-level abstractions for espresso machine hardware suc
 
 The library is intentionally made machine-agnostic and can be configured to support different hardware modules and machine architectures.
 
-- Repository: https://github.com/openpresso/libopenpresso
-- Documentation: https://openpresso.org/libopenpresso
+- [Repository](https://github.com/openpresso/libopenpresso)
+- [Documentation](/libopenpresso)
 
 ### Openpressod {#openpressod}
 
@@ -51,8 +51,8 @@ Openpressod uses Libopenpresso to interact with hardware and exposes machine fun
 > [!NOTE]
 > Current implementation configures the Libopenresso to target specific hardware modules and a machine, such as the Gaggia Classic Pro. Later it may be refactored to make it more flexible or just use as a reference point to implement another deamon.
 
-- Repository: https://github.com/openpresso/openpressod
-- Documentation: https://openpresso.org/openpressod
+- [Repository](https://github.com/openpresso/openpressod)
+- [Documentation](/openpressod)
 
 ### Openpresso.proto {#openpresso-proto}
 
@@ -60,7 +60,7 @@ The shared Openpressod gRPC API definition.
 
 This repository contains protocol definitions and generated stubs used by the daemon and client applications.
 
-- Repository: https://github.com/openpresso/openpresso-proto
+- [Repository](https://github.com/openpresso/openpresso-proto)
 
 ### Openpresso-ctl {#openpresso-ctl}
 
@@ -68,8 +68,8 @@ A command-line client for interacting with Openpressod.
 
 It maps daemon gRPC API directly to CLI commands. Useful for testing or creating simple cron tasks like scheduled preheating.
 
-- Repository: https://github.com/openpresso/openpresso-ctl
-- Documentation: https://openpresso.org/openpresso-ctl
+- [Repository](https://github.com/openpresso/openpresso-ctl)
+- [Documentation](/openpresso-ctl)
 
 ### Web Backend *(planned)* {#openpresso-backend}
 
@@ -87,4 +87,4 @@ with kiosk mode browser or on any external device in the local network.
 
 A helper repository containing Docker images with a cross-compiling toolchain used to compile Openpresso components consistently across development systems.
 
-- Repository: https://github.com/openpresso/openpresso-toolchain
+- [Repository](https://github.com/openpresso/openpresso-toolchain)
