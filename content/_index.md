@@ -8,20 +8,60 @@ title: "Home"
     </div>
     <div class="hero-text">
         <h1 class="hero-title accent">Openpresso</h1>
-        <p class="hero-subtitle">An open-source modding kit for espresso machines.</p>
+        <p class="hero-subtitle">An open-source modding platform for espresso machines.</p>
     </div>
 </div>
 
-> [!CAUTION] Safety Caution
-> Espresso machines operate with **high voltages** and water under **high temperature and pressure**, which is **extremely dangerous**.
-> Any modifications should only be performed if you fully understand what you are doing and assume all risks.
-> Openpresso developers provide **no warranty** and are not responsible for any injuries or damages.
+> [!CAUTION] DANGER
+> Espresso machine works with **mains electricity**, hot surfaces, **pressurized steam and water**. Incorrect assembly, wiring, firmware changes, or operation can cause electric shock, burns, fire, equipment damage, serious injury, or **death**. Use only if you are qualified to work safely on mains-powered, heated, pressurized equipment. Provided **as is**, without any warranty; you assume all risks and all responsibility for compliance, testing, installation, and use.
 
-## Philosophy & Goals
+Openpresso is a community-driven open platform for espresso machine modification and experimentation. It provides a flexible foundation that can be adapted, extended, and built upon to transform an entry-level espresso machine and a handful of affordable hardware modules into a feature-rich brewing platform. The project embraces transparency, modularity, and knowledge sharing, enabling ideas, improvements, and innovations to be shared and refined by the entire community.
 
-The main goal of the Openpresso project is to provide a flexible, accessible, and highly customizable platform that allows coffee enthusiasts to transform and extend their machines using modern hardware and software.
+---
 
-The project is developed by a single contributor, but its long-term success depends on community involvement. Openpresso is designed to be a foundation that others can adapt to their own machines, workflows, and brewing philosophies. Users are encouraged to contribute improvements, share public forks, and build new modules on top of the platform.
+## Features
+
+Openpresso transforms a traditional espresso machine into a programmable brewing platform.
+
+### Measure
+
+Monitor extraction with real time graphs using digital:
+
+- Temperature sensing
+- Pressure sensing
+- Weight measurement
+- Flow-rate calculation
+
+### Control
+
+Openpresso actively controls machines heating elements, pumps and valves.
+
+Features include:
+
+- PID temperature control with cold water feed-forward compensation
+- Pressure profiling
+- Flow profiling
+- Extended steaming with automatic boiler refill
+
+### Program
+
+Create multiple reusable multi-step brew profiles that define:
+
+- Pressure or flow step target
+- Time or weight step change condition
+- Time or weight brew stop condition
+
+### Analyze
+
+Openpresso stores extraction history together with measured metrics, making it possible to compare results, refine recipes, and reproduce successful shots.
+
+### Integrate
+
+All functionality is exposed through REST API and a lightweight web interface that can run on a touchscreen attached directly to the machine or be accessed from any device on the local network. Some actions can also be invoked from the terminal using a simple CLI tool.
+
+### Preserve the Original Experience
+
+For users who prefer a stock appearance, Openpresso allows to build a "sleeper" that uses the machine's original buttons and indicator lamps while advanced control logic operates in the background.
 
 ---
 
@@ -85,10 +125,16 @@ Adding new sensors, controllers, machine types, user interfaces and automation f
 
 Current state can be observed on the [roadmap](/roadmap/) page.
 
-The primary development and testing platform consists of:
+The primary development and testing platform is built with:
 
 - Raspberry Pi Zero 2W
 - Gaggia Classic Pro
+- Analog pressure transducer and ADS1115 DAC
+- K-Type thermocouple and MAX31856 module
+- Parallel connected two strain gauge load cells under a drip tray and NAU7802 module
+- 3-ch AC-dimmer that controls pump, valve and heater
+- Original power, brew and steam buttons connected to the SBC GPIO pins
+- Indication LEDs mounted in place of original power, brew and steam neon lamps and connected to the SBC GPIO pins
 
 While the architecture is designed to support other hardware in the future, most real-world testing currently happens on this combination.
 
@@ -99,7 +145,9 @@ Visit [subprojects](/subprojects/) page with compelete listing of the components
 
 ## Join the Journey
 
-Openpresso aims to become an open platform for experimentation, learning, and innovation in the espresso community. Contributions, feedback and forks are welcome.
+The project is developed by a single contributor, but its long-term success depends on community involvement.
+Openpresso wants be a foundation that others can adapt to their own machines, workflows, and use as an open platform for experimentation, learning, and innovation in the espresso community.
+Users are encouraged to contribute improvements, share public forks, and build new modules on top of the platform.
 
 ---
 
