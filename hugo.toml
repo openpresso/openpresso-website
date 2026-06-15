@@ -1,4 +1,3 @@
-baseURL = 'https://openpresso.org/'
 locale = 'en-us'
 title = 'Openpresso'
 theme = ['hugo-admonitions', 'PaperMod']
