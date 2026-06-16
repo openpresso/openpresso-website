@@ -2,22 +2,13 @@
 title: "Home"
 ---
 
-<div class="hero-container">
-    <div class="home-logo">
-        <img class="logo-light" src="/logo.svg" alt="Openpresso Logo">
-    </div>
-    <div class="hero-text">
-        <h1 class="hero-title accent">Openpresso</h1>
-        <p class="hero-subtitle">An open-source modding platform for espresso machines.</p>
-    </div>
-</div>
-
-> [!CAUTION] DANGER
-> Espresso machine works with **mains electricity**, hot surfaces, **pressurized steam and water**. Incorrect assembly, wiring, firmware changes, or operation can cause electric shock, burns, fire, equipment damage, serious injury, or **death**. Use only if you are qualified to work safely on mains-powered, heated, pressurized equipment. Provided **as is**, without any warranty; you assume all risks and all responsibility for compliance, testing, installation, and use.
-
-Openpresso is a community-driven open platform for espresso machine modification and experimentation. It provides a flexible foundation that can be adapted, extended, and built upon to transform an entry-level espresso machine and a handful of affordable hardware modules into a feature-rich brewing platform. The project embraces transparency, modularity, and knowledge sharing, enabling ideas, improvements, and innovations to be shared and refined by the entire community.
+> [!ABSTRACT] *An open-source modding platform for espresso machines*
+> Openpresso is a community-driven open platform for espresso machine modification and experimentation. It provides a flexible foundation that can be adapted, extended, and built upon to transform an entry-level espresso machine and a handful of affordable hardware modules into a feature-rich brewing platform. The project embraces transparency, modularity, and knowledge sharing, enabling ideas, improvements, and innovations to be shared and refined by the entire community.
 
 ---
+
+> [!DANGER]
+> Espresso machine works with **mains electricity**, hot surfaces, **pressurized steam and water**. Incorrect assembly, wiring, firmware changes, or operation can cause electric shock, burns, fire, equipment damage, serious injury, or **death**. Use only if you are qualified to work safely on mains-powered, heated, pressurized equipment. Provided **as is**, without any warranty; you assume all risks and all responsibility for compliance, testing, installation, and use.
 
 ## Features
 

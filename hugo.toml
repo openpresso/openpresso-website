@@ -26,5 +26,3 @@ theme = ['hugo-admonitions', 'PaperMod']
         url = "/roadmap/"
         weight = 20
 
-[markup.goldmark.renderer]
-    unsafe = true
