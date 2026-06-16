@@ -40,7 +40,7 @@ Libopenpresso provides high-level abstractions for espresso machine hardware suc
 The library is intentionally made machine-agnostic and can be configured to support different hardware modules and machine architectures.
 
 - [Repository](https://github.com/openpresso/libopenpresso)
-- [Documentation](/libopenpresso)
+- [Documentation](/openpresso-docs/libopenpresso)
 
 ### Openpressod {#openpressod}
 
@@ -52,7 +52,7 @@ Openpressod uses Libopenpresso to interact with hardware and exposes machine fun
 > Current implementation configures the Libopenresso to target specific hardware modules and a machine, such as the Gaggia Classic Pro. Later it may be refactored to make it more flexible or just use as a reference point to implement another deamon.
 
 - [Repository](https://github.com/openpresso/openpressod)
-- [Documentation](/openpressod)
+- [Documentation](/openpresso-docs/openpressod)
 
 ### Openpresso.proto {#openpresso-proto}
 
@@ -69,7 +69,7 @@ A command-line client for interacting with Openpressod.
 It maps daemon gRPC API directly to CLI commands. Useful for testing or creating simple cron tasks like scheduled preheating.
 
 - [Repository](https://github.com/openpresso/openpresso-ctl)
-- [Documentation](/openpresso-ctl)
+- [Documentation](/openpresso-docs/openpresso-ctl)
 
 ### Web Backend *(planned)* {#openpresso-backend}
 
