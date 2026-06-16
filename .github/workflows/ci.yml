@@ -1,0 +1,30 @@
+name: Build and Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build static website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.163.1'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          path: public
